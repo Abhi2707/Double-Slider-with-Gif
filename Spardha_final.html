@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.c1
+		{
+			position: absolute;
+			height: 250px;
+			width: 250px;
+			margin-top: 27%;
+
+		
+		}
+		.c2{
+			
+			background-image: url("photo1.jpg");
+			background-size: cover;
+		}
+		.c3{
+			
+			background-image: url("photo3.jpg");
+			background-size: cover;
+		}
+		.c6{
+			background-image: url("bask.jpg");
+			background-size: cover;
+		}
+		.c9{
+
+			background-image: url("bats.jpg");
+			background-size: cover;
+		
+		}
+		.c4{
+			position: absolute;
+			height: 250px;
+			width: 250px;
+			margin-left: 25%;
+			margin-top: 27%;
+
+		}
+		.c7{
+			position: absolute;
+			height: 250px;
+			width: 250px;
+			margin-left: 50%;
+			margin-top: 27%;
+		}
+			.c8{
+			position: absolute;
+			height: 250px;
+			width: 250px;
+			margin-left: 70%;
+			margin-top: 26%;
+		}
+
+	</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function fuc1(){
+				$("#b2").hide();
+				$("#b3").hide();
+					$("#b4").hide();
+
+				
+
+				
+						$("#b1").animate({"left":"25%"},3000)
+				           
+								.animate({"height":"0px","width":"0px"},2000);
+								$("b2").hide();
+								$("b3").hide();
+									$("#b4").hide();
+							});
+			setTimeout(function fuc3() { $(".c2").addClass("c3");}, 5000);
+			setTimeout(function fuc2() {
+				
+				$("#b2").show();
+				$("#b3").hide();
+					$("#b4").hide();
+				$("#b2").animate({"left":"25%"},3000)
+				           
+								.animate({"height":"0px","width":"0px"},2000);}, 6000);
+			$(document).ready(function fuc3(){
+				$("#b3").hide();
+					$("#b4").hide();
+				setTimeout(function() {$(".c2").addClass("c6");}, 10000);
+				setTimeout(function() {
+
+				$("#b3").show();
+				$("#b3").animate({"left":"20%"},4000)
+				           
+								.animate({"height":"0px","width":"0px"},2000);
+				}, 10000);
+
+				setTimeout(function() {$(".c2").addClass("c9");}, 15100);
+				setTimeout(function() {$("#b4").show();
+				$("#b4").animate({"left":"15%"},4000)
+				           
+								.animate({"height":"0px","width":"0px"},2000);}, 15200);
+
+
+			});
+			
+
+			
+					
+				
+
+		
+	
+														
+
+
+
+
+			
+			
+			
+		</script>
+</head>
+<body class="c2">
+	
+	
+	<button>Move</button>
+	<br>
+	<img src="run.gif" class="c1" id="b1">
+	<img src="so.gif" class="c4" id="b2">
+	<img src="rr.gif" class="c7" id="b3">
+	<img src="sb.gif" class="c8" id="b4">
+	
+</body>
+</html>
